@@ -15,7 +15,7 @@ public class WikipediaScraperTest {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");  // Add headless mode
         driver = new ChromeDriver(options);
