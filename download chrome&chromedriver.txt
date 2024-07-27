@@ -1,0 +1,24 @@
+Download chrome & chrome web driver
+
+
+Download the .deb file:
+wget https://www.slimjet.com/chrome/download-chrome.php?file=files%2F104.0.5112.102%2Fgoogle-chrome-stable_current_amd64.deb -O google-chrome-stable_current_amd64.deb
+
+Install the .deb file:
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt-get install -f
+
+Verify the installation:
+google-chrome --version
+
+
+Download and Install ChromeDriver
+wget https://chromedriver.storage.googleapis.com/104.0.5112.79/chromedriver_linux64.zip
+
+Unzip and install ChromeDriver:
+unzip chromedriver_linux64.zip
+
+sudo mv chromedriver /usr/local/bin/
+
+Verify the installation:
+chromedriver --version
